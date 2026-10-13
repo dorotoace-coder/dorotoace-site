@@ -349,7 +349,9 @@ footer{padding:44px clamp(18px,5vw,56px) 54px;border-top:1px solid var(--line);b
     <div style="margin-top:34px;display:flex;flex-wrap:wrap;gap:10px">
       <a class="btn btn-ghost" href="https://instagram.com/dorotoace" target="_blank" rel="noopener">Instagram @dorotoace ↗</a>
       <a class="btn btn-ghost" href="https://www.youtube.com/@dorotoace" target="_blank" rel="noopener">YouTube ↗</a>
-      <a class="btn btn-ghost" href="mailto:dorotoace@gmail.com">dorotoace@gmail.com</a>
+      <a class="btn btn-ghost" href="mailto:info@dorotoace.ca">info@dorotoace.ca</a>
+      <a class="btn btn-ghost" href="https://wa.me/12049958298" target="_blank" rel="noopener">WhatsApp Canada: +1 204 995 8298 ↗</a>
+      <a class="btn btn-ghost" href="https://wa.me/2348122166179" target="_blank" rel="noopener">WhatsApp Nigeria: +234 812 216 6179 ↗</a>
     </div>
   </div>
 </section>
@@ -431,13 +433,13 @@ footer{padding:44px clamp(18px,5vw,56px) 54px;border-top:1px solid var(--line);b
     var v=function(id){return document.getElementById(id).value.trim();};
     var subject='Booking enquiry — '+v('fType')+(v('fCity')?' · '+v('fCity'):'');
     var body=['Name: '+v('fName'),'Organisation: '+(v('fOrg')||'—'),'Booking for: '+v('fType'),'Preferred date: '+(v('fDate')||'Flexible'),'City: '+(v('fCity')||'—'),'Expected crowd: '+(v('fSize')||'—'),'','About the event:',v('fMsg')||'—'].join('\n');
-    var a=document.createElement('a'); a.href='mailto:dorotoace@gmail.com?subject='+encodeURIComponent(subject)+'&body='+encodeURIComponent(body); document.body.appendChild(a); a.click(); a.remove();
+    var a=document.createElement('a'); a.href='mailto:info@dorotoace.ca?subject='+encodeURIComponent(subject)+'&body='+encodeURIComponent(body); document.body.appendChild(a); a.click(); a.remove();
   });
   document.getElementById('copyEmail').addEventListener('click',function(){
     var note=document.getElementById('copyNote');
     if(navigator.clipboard&&navigator.clipboard.writeText){
-      navigator.clipboard.writeText('dorotoace@gmail.com').then(function(){ note.textContent='Copied — dorotoace@gmail.com'; },function(){ note.textContent='dorotoace@gmail.com'; });
-    } else { note.textContent='dorotoace@gmail.com'; }
+      navigator.clipboard.writeText('info@dorotoace.ca').then(function(){ note.textContent='Copied — info@dorotoace.ca'; },function(){ note.textContent='info@dorotoace.ca'; });
+    } else { note.textContent='info@dorotoace.ca'; }
   });
 
   // Reveal on scroll
